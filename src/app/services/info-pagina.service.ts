@@ -11,14 +11,27 @@ export class InfoPaginaService {
 */
   info: InfoPaginaInterface = {};
   load = false;
+  team: any [] = [];
 
   constructor(private http: HttpClient) {
+    this.loadInfo();
+    this.loadTeam();
+  }
+
+  private loadInfo(){
     this.http.get('assets/data/data-pagina.json')
       .subscribe((resp: InfoPaginaInterface) =>{
         this.load = true;
         this.info = resp;
         console.log(resp);
       });
+  }
+
+  private loadTeam(){
+    this.http.get('https://kevinportafolio-6e131.firebaseio.com/team.json').subscribe((resp: any[]) =>{
+      this.team = resp;
+      console.log(resp);
+    });
 
   }
 }
