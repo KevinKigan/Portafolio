@@ -8,6 +8,7 @@ import { PortafolioComponent } from './components/pages/portafolio/portafolio.co
 import { AboutComponent } from './components/pages/about/about.component';
 import { ItemComponent } from './components/pages/item/item.component';
 import {AppRoutingModule} from './app-routing.module';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {AppRoutingModule} from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
