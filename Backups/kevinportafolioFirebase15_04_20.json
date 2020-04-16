@@ -1,0 +1,21 @@
+{
+  "team" : [ {
+    "name" : "Kevin Gómez",
+    "sentence" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+    "subtitle" : "Web Designer",
+    "tweeter" : "@Kevin__Kigan",
+    "url" : "https://firebasestorage.googleapis.com/v0/b/kevinportafolio-6e131.appspot.com/o/team-1.jpg?alt=media&token=843e496a-409e-4669-88b9-48bf2227b9d6"
+  }, {
+    "name" : "Angelica",
+    "sentence" : "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
+    "subtitle" : "Systems Engineer",
+    "tweeter" : "@Angelica",
+    "url" : "https://firebasestorage.googleapis.com/v0/b/kevinportafolio-6e131.appspot.com/o/team-2.jpg?alt=media&token=b9e60504-65a9-4d65-b88d-8f51a738e0bd"
+  }, {
+    "name" : "Patrick",
+    "sentence" : "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "subtitle" : "Master in marketing",
+    "tweeter" : "@Patrick",
+    "url" : "https://firebasestorage.googleapis.com/v0/b/kevinportafolio-6e131.appspot.com/o/team-3.jpg?alt=media&token=35b5e630-3e4d-47d1-9c30-8ff314476dad"
+  } ]
+}

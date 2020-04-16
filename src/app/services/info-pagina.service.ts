@@ -32,6 +32,5 @@ export class InfoPaginaService {
       this.team = resp;
       console.log(resp);
     });
-
   }
 }
