@@ -18,19 +18,25 @@ export class InfoPaginaService {
     this.loadTeam();
   }
 
+  /**
+   * Carga la informacion referente a la pagina desde la BBDD
+   *
+   */
   private loadInfo(){
     this.http.get('assets/data/data-pagina.json')
       .subscribe((resp: InfoPaginaInterface) =>{
         this.load = true;
         this.info = resp;
-        console.log(resp);
       });
   }
 
+  /**
+   * Carga el equipo de trabajo desde la BBDD
+   *
+   */
   private loadTeam(){
     this.http.get('https://kevinportafolio-6e131.firebaseio.com/team.json').subscribe((resp: any[]) =>{
       this.team = resp;
-      console.log(resp);
     });
   }
 }
