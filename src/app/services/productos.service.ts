@@ -14,7 +14,6 @@ export class ProductosService {
 
   constructor(private http: HttpClient) {
     this.loadProducts();
-    console.log(firebasePath);
   }
 
   /**
@@ -65,7 +64,6 @@ export class ProductosService {
    */
   private filterProducts(term: string) {
     this.productsFilter = [];
-    console.log(this.products);
     if (term === 'ALLPRODUCTS') {
       this.productsFilter = this.products;
     } else {
