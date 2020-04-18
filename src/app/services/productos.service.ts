@@ -65,16 +65,15 @@ export class ProductosService {
    */
   private filterProducts(term: string) {
     this.productsFilter = [];
+    console.log(this.products);
     if (term === 'ALLPRODUCTS') {
       this.productsFilter = this.products;
     } else {
       term = term.toLocaleLowerCase();
       this.products.forEach(prod => {
-        console.log('buscando...');
-        if (prod.categoria.indexOf(term) >= 0 || prod.titulo.indexOf(term) >= 0) {
-          console.log('encontré algo');
+        if (prod.categoria.toLocaleLowerCase().indexOf(term) >= 0 ||
+          prod.titulo.toLocaleLowerCase().indexOf(term) >= 0) {
           this.productsFilter.push(prod);
-          console.log(this.productsFilter);
         }
       });
     }
