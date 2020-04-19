@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {InfoPaginaInterface} from '../../../interfaces/info-pagina.interface';
 import {InfoPaginaService} from '../../../services/info-pagina.service';
 
 @Component({
