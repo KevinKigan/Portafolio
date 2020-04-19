@@ -11,6 +11,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {HttpClientModule} from '@angular/common/http';
 import { SearchComponent } from './components/pages/search/search.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,7 @@ import { SearchComponent } from './components/pages/search/search.component';
     PortafolioComponent,
     AboutComponent,
     ItemComponent,
-    SearchComponent
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
